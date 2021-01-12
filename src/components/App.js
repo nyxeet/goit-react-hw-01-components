@@ -2,7 +2,7 @@ import react from 'react';
 import Profile from './Profile/Profile'
 import Statistics from './Statistics/Statistics'
 import user from '../user.json'
-import stats from '../components/Statistics/statistical-data.json'
+import statistticalData from '../components/Statistics/statistical-data.json'
 
 
 function App() {
@@ -14,7 +14,8 @@ function App() {
             location={user.location}
             avatar={user.avatar}
             stats={user.stats} />
-            <Statistics stats={stats} />
+            <Statistics stats={statistticalData} title='Upload stats' />
+            <Statistics stats={statistticalData} />;
         </>
     );
 }

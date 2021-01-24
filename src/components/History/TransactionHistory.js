@@ -17,7 +17,7 @@ function History({ items }) {
 
       <tbody>
         {items.map(item => (
-          <tr>
+          <tr key={item.id}>
             <td className={styles.item}>{item.type}</td>
             <td className={styles.item}>{item.amount}</td>
             <td className={styles.item}>{item.currency}</td>

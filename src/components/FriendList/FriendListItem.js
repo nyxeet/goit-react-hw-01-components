@@ -1,6 +1,5 @@
 import react from 'react';
 import styles from './FriendList.module.css'
-import FriendListItem from './FriendListItem'
 
 
 

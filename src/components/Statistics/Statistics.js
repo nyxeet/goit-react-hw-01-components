@@ -4,7 +4,6 @@ import styles from './Statistics.module.css'
 
 
 function Statistics({ stats, title }) {
-    console.log(stats)
   return (
       <section className={styles.statistics}>
           {title ? <h2 className={styles.title}>{title}</h2> : null}

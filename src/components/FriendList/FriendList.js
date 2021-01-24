@@ -5,7 +5,6 @@ import FriendListItem from './FriendListItem'
 
 
 function FriendList({ friends }) {
-  console.log(friends)
   return (
     <ul className={styles.list}>
      {friends.map(friend => (

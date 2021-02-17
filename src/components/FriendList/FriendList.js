@@ -1,6 +1,7 @@
-import react from 'react';
+import React from 'react'
 import styles from './FriendList.module.css'
 import FriendListItem from './FriendListItem'
+import PropTypes from 'prop-types'
 
 
 
@@ -12,6 +13,19 @@ function FriendList({ friends }) {
       ))}          
     </ul>
   );
+}
+
+FriendList.propTypes = {
+  friends: PropTypes.arrayOf(
+    PropTypes.shape(
+      {
+        avatar: PropTypes.string,
+        name: PropTypes.string.isRequired,
+        isOnline: PropTypes.bool.isRequired,
+        id: PropTypes.number.isRequired
+      }
+    ),
+  )
 }
 
 export default FriendList;

@@ -1,4 +1,4 @@
-import react from 'react';
+import React from 'react'
 import styles from './FriendList.module.css'
 
 
@@ -10,7 +10,7 @@ function FriendList({ avatar, name, isOnline }) {
     return (
         <li className={styles.item}>
           <span className={statusClasses.join(' ')}></span>
-          <img className={styles.avatar} src={avatar} width='48' />
+          <img className={styles.avatar} src={avatar} width='48' alt='' />
           <p className={styles.name}>{name}</p>  
         </li>
     );

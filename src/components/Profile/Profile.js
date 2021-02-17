@@ -1,4 +1,4 @@
-import react from 'react'
+import React from 'react'
 import Description from './Description'
 import Stats from './Stats'
 import styles from './Description.module.css'
@@ -7,7 +7,6 @@ import PropTypes from 'prop-types'
 
 
 function Profile({ name, avatar, tag, location, stats }) {
-  console.log(stats);
   return (
     <div className={styles.profile}>
       <Description

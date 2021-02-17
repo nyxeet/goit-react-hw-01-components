@@ -1,5 +1,6 @@
-import react from 'react';
+import React from 'react'
 import styles from './Statistics.module.css'
+import PropTypes from 'prop-types'
 
 
 
@@ -24,6 +25,19 @@ function generateRandomColor() {
     let g = Math.round((Math.random() * 255)); //green 0 to 255
     let b = Math.round((Math.random() * 255)); //blue 0 to 255
     return 'rgb(' + r + ', ' + g + ', ' + b + ')';
-  };
+};
+
+Statistics.propTypes = {
+  title: PropTypes.string,
+  stats: PropTypes.arrayOf(
+    PropTypes.shape(
+      {
+       id: PropTypes.string.isRequired,
+       label: PropTypes.string.isRequired,
+       percentage: PropTypes.number.isRequired,
+      }
+    ),
+  )
+}
 
 export default Statistics;
